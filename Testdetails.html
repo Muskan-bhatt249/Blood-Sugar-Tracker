@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User Health Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">SugarTrack</div>
+
+    <div class="add-user-health-data">
+        <h2>User Test Details</h2>
+        <p>Please provide Blood Sugar and Cholestrol Reports</p>
+
+        <form id="healthDataForm">
+            <label for="fastingBloodSugar">Fasting Blood Sugar:</label>
+            <input type="number" id="fastingBloodSugar" name="fastingBloodSugar" placeholder="Enter fasting blood sugar" required>
+
+            <label for="randomBloodSugar">Random Blood Sugar:</label>
+            <input type="number" id="randomBloodSugar" name="randomBloodSugar" placeholder="Enter random blood sugar" required>
+
+            <label for="hemoglobinA1C">Hemoglobin A1C:</label>
+            <input type="number" id="hemoglobinA1C" name="hemoglobinA1C" placeholder="Enter hemoglobin A1C" required>
+
+            <label for="cholesterol">Cholesterol:</label>
+            <input type="number" id="cholesterol" name="cholesterol" placeholder="Enter cholesterol level" required>
+
+            <label for="ldlCholesterol">LDL Cholesterol:</label>
+            <input type="number" id="ldlCholesterol" name="ldlCholesterol" placeholder="Enter LDL cholesterol" required>
+
+            <label for="hdlCholesterol">HDL Cholesterol:</label>
+            <input type="number" id="hdlCholesterol" name="hdlCholesterol" placeholder="Enter HDL cholesterol" required>
+
+            <label for="triglycerides">Triglycerides:</label>
+            <input type="number" id="triglycerides" name="triglycerides" placeholder="Enter triglycerides level" required>
+
+            <button type="submit">Save Details</button>
+        </form>
+    </div>
+
+</body>
+</html>
