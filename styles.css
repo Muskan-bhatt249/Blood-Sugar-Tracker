@@ -1,0 +1,245 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #5e60ce;
+    --secondary-color: #4ea8de;
+    --accent-color: #56cfe1;
+    --text-dark: #1d3557;
+    --text-light: #f1faee;
+    --bg-light: #f8f9fa;
+    --bg-dark: #023047;
+}
+
+/* Header Styles */
+.header {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: var(--text-light);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--accent-color);
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: var(--text-dark);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-light);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.hero-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    background: var(--bg-light);
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    background: var(--text-light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 60px 20px;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.step {
+    background: var(--text-light);
+    color: var(--text-dark);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.step h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px;
+    background: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: var(--accent-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--text-light);
+}
+.user-details {
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background: var(--bg-light);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user-details h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-details p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+.user-details form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+.user-details form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+}
+
+.user-details form .btn {
+    width: 100%;
+    text-align: center;
+}
+
